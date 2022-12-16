@@ -6,13 +6,13 @@
     --h1-color: #3F444C;
 }
 
-[data-theme="dark"] {
+/* [data-theme="dark"] {
     --primary-color: #FCFDFD;
     --secondary-color: #818386;
     --bg-color: #010712;
     --button-color: #818386;
     --h1-color: #FCFDFD;
-}
+} */
 
 * {
     margin: 0;
