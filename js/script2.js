@@ -24,27 +24,27 @@ const validate = (e) => {
     e.preventDefault();
 
     if (name.value.length < 3) {
-        errorElement.innerHTML = 'Your name should be at least 3 characters long.';
+        errorElement.innerHTML = 'Votre nom doit contenir au minimum 3 caractères.';
         return false;
     }
 
     if (!(email.value.includes('.') && (email.value.includes('@')))) {
-        errorElement.innerHTML = 'Please enter a valid email address.';
+        errorElement.innerHTML = 'Votre email est invalide.';
         return false;
     }
 
     if (!emailIsValid(email.value)) {
-        errorElement.innerHTML = 'Please enter a valid email address.';
+        errorElement.innerHTML = 'Votre email est invalide.';
         return false;
     }
 
     if (message.value.length < 15) {
-        errorElement.innerHTML = 'Please write a longer message.';
+        errorElement.innerHTML = 'Votre message doit contenir 15 caractères minimum.';
         return false;
     }
 
     errorElement.innerHTML = '';
-    successMsg.innerHTML = 'Thank you! I will get back to you as soon as possible.';
+    successMsg.innerHTML = 'Merci!, votre message a bien été reçu. Je vous répondrai aussi vite que possible';
 
     e.preventDefault();
     setTimeout(function () {
