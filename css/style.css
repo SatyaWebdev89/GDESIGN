@@ -1,0 +1,286 @@
+/* STYLE GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* FIN DE STYLE GENERALE */
+
+body {
+    width: 100vw;
+    /* height: 100vh; */
+    /* background-image: url(../images/unnamed.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; */
+        background-color: #FBE27E;
+
+}
+
+
+/* HEADER */
+header {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari et Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+    /* height: 50vh; */
+
+
+}
+
+/* NAVBAR */
+.nav {
+    height: 17vh;
+    /* overflow: hidden; */
+    /* background-image: url(../images/unnamed.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;  */
+    background-color: #020100;
+    /* position: sticky; */
+    top: 0px;
+
+
+}
+
+
+
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 40px;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+
+
+
+}
+
+li {
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+ul img {
+    width: 150px;
+    padding-top: 20px;
+    position: absolute;
+    left: 44%;
+}
+
+.parallax h1,
+p {
+    font-family: 'Helvetica Neue', sans-serif;
+    
+}
+h1{
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+
+.parallax {
+    background-image: url(../images/unnamed.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* opacity: 1; */
+    background-color: #020100;
+    height: 83vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+
+
+
+}
+
+.parallax p {
+    max-width: 600px;
+    margin-left: 240px;
+}
+
+
+
+.parallax input {
+    width: 120px;
+    height: 30px;
+    /* border-radius: 25%; */
+    background-color: #B27F0C;
+    font-family: 'Helvetica Neue', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.parallax img {
+    width: 400px;
+    position: absolute;
+    top: 24%;
+    /* left: 33%; */
+    margin-left: 320px;
+
+}
+
+/* MAIN */
+
+main {
+    /* height: 40vh; */
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari et Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+    background-color: #FBE27E;
+}
+
+
+
+
+.galerie p,
+h2 {
+    color: #3B3636;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-top: 55px;
+    padding-bottom: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    /* background-color: #FBE27E; */
+}
+
+.galerie {
+    height: 83vh;
+    /* height: 850px; */
+    /* background-color: #FFF09A */
+    /* background-image: url(../images/unnamed.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; */
+    /* height: 83vh; */
+    /* opacity: 0.9; */
+}
+
+/* CARROUSEL */
+
+.carrousel {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 65vw;
+    height: 40vmin;
+    display: flex;
+    gap: 5px;
+    margin-left: 240px;
+    /* background-color: #FBE27E; */
+    
+}
+
+.carrousel img {
+    border-radius: 5px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    flex: 1;
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s;
+    background-color: #FBE27E;
+}
+
+.carrousel img:hover {
+    flex: 2;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    /* height: 15vh; */
+    /* margin-bottom: 0px; */
+}
+
+.containerFooter {
+    height: 20vh;
+    background-color: #020100;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    
+    
+
+}
+
+/* FADIN */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+
+    /* sur Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* sur Safari et Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* sur Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
